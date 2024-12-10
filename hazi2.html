@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html land="hu">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="widht=device-width, initial-scale=1.0">
+    <title>Regisztracios urlap</title>
+</head>
+
+<body>
+<!-- kep vagy video az oldal tetejen-->
+    <img src="image.jpg" alt="udvozlo kep" style="width:100 ;" height="auto;">
+
+    <h2>Regisztracio</h2>
+<!--az alap adatok lekerese -->
+    <form action="/submit" method="POST" enctype="multipart/form-data" >
+        <label for="fullname">Teljes nev:</label>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+
+        <label for="email">email cim:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Jelszo:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="phone">Telefonszam</label>
+        <input for="tel" id="phone" name="phone" required><br><br>
+
+<!--nem kivalasztasa radiogombokkal-->
+        <p> Nem:</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">ferfi</label><br>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="male">no</label><br>
+
+        <input type="radio" id="other" name="gender" value="other">
+        <laber for="other">egyeb</laber><br>
+
+ <!--feliratkozas-->       
+        <input type="checkbox" id="newletter" neme="newletter">
+        <label for="newletter">feliratkozom a hirlevelre</label><br><br>
+
+<!--erdeklodesi kor, legordulo menu-->
+        <label for="interest">--erdeklodesi kor:</label>
+        <select id="interest" name="interest">
+            <option value="sport"> Sport </option>
+            <option value="music"> Zene </option>
+            <option value="leisure"> Egyeb szabadidos tevekenyseg </option>
+        </select><br><br>
+
+        <!--profilkep feltoltese-->
+        <label for="profilPicture">Profilkep feltoltese:</label>
+        <input type="file" id="profilPicture" name="profilPicture" accept="image/*"><br><br>
+
+        <!--weboldal link-->
+        <label>for="website" weboldal (opcionalis):</label>
+        <input type="url" id="website" name="website"><br><br>
+
+        <!--megjegyzesek-->
+        <label for="comments">--megjegyzesek--</label>
+        <input type="commens" id="comments" name="terms required">
+
+        <!--hozzajarulas elfogadasa-->
+        <label type="checkbox" id="terms" name="terms" required>
+        <label for="terms">Elfogadom az adatvedelmi iranyelveket </label><br><br>
+
+        <!-- bekuldes gomb-->
+         <button type="submit">Bekuldes</button>
+        </form> 
+</body>
+

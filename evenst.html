@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<head>
+  <meta name="title" content="My Events" />
+  <meta name="description" content="This is my event's description" />
+</head>
+
+<body onresize="showScreenSize()" onload="showPageName()">
+  <button onclick="showScreenSize()">Show screen size</button>
+
+  <input type="text" id="text-input" onkeyup="showTextInputValue()" />
+
+  <form onsubmit="submitForm()">
+    <input type="text" id="first_name" />
+    <input type="text" id="last_name" />
+    <button type="submit">Submit form</button>
+  </form>
+
+  <script>
+    function showScreenSize() {
+      console.log("Screen width:", window.innerWidth);
+      console.log("Screen height:", window.innerHeight);
+    }
+
+    function showTextInputValue() {
+      const value = document.getElementById("text-input").value;
+      console.log("Text input value:", value);
+    }
+
+    function submitForm() {
+      const nameValue = document.getElementById("first_name").value;
+      const emailValue = document.getElementById("last_name").value;
+
+      console.log("Name:", nameValue);
+      console.log("Email:", emailValue);
+
+      debugger;
+    }
+
+    function showPageName() {
+      console.log("Page name:", document.title);
+    }
+  </script>
+</body>

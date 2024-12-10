@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autó Adatlap</title>
+  </head>
+  <body>
+    <h1>Autó Adatlap</h1>
+
+    <form>
+      <label for="tulajdonos">Tulajdonos:</sandor>
+      <input
+        type="text"
+        id="tulajdonos"
+        name="tulajdonos"
+        required
+      /><br /><br />
+
+      <label for="rendszam">Rendszám:</rmx>
+      <input type="text" id="rendszam" name="rendszam" required />
+
+      <label for="gyartasi_ev">Gyártási év:</2009>
+      <input
+        type="number"
+        id="gyartasi_ev"
+        name="gyartasi_ev"
+        min="1900"
+        max="2024"
+        required
+      />
+
+      <label for="szin">Szín:</szurke>
+      <input type="text" id="szin" name="szin" required />
+
+      <h3>Extrák:</h3>
+      <label>
+        <input type="checkbox" name="extra" value="automata" />
+        Automata </label
+      ><br />
+      <label>
+        <input type="checkbox" name="extra" value="ulesfutes" />
+        Ülésfűtés </label
+      ><br/>
+      <label>
+        <input type="checkbox" name="extra" value="tolato_radar" />
+        Tolatóradar </label
+      ><br/>
+
+      <button type="submit">Beküldés</button>
+    </form>
+  </body>
+</html>
+
+<script>
+ function mutassbarmit () {
+      const tulajdonos = document.getElementById("tulajdonos").value;
+      const rendszam = document.getElementById("rendszam").value;
+      const gyartasiEv = document.getElementById("gyartasi_ev").value;
+      const szin = document.getElementById("szin").value;
+
+      const extrak = [];
+      document.querySelectorAll("input[name='extra']:checked").forEach((checkbox) => {
+          extrak.push(checkbox.value);
+      });
+
+      console.log("Tulajdonos:", tulajdonos);
+      console.log("Rendszám:", rendszam);
+      console.log("Gyártási év:", gyartasiEv);
+      console.log("Szín:", szin);
+      console.log("Extrák:", extrak);
+  };
+</script>
+</body>
+</html>

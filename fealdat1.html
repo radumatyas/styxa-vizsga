@@ -1,0 +1,35 @@
+<!-- Hozz létre egy bemutatkozó (CV) HTML oldalt ami tartalmazza a következőket:
+Adjuk meg weboldalunk címet és leirását 
+ -Nevünk - nagy betűkkel
+ -Foglalkozásunk - dombornyomott betűkkel
+ -Szülővárosunk és születésünk évét - pirossal
+-->
+
+<!DOCTYPE html>
+
+<head>
+  <meta name="title" content="My CV" />
+  <meta name="description" content="This is my CV" />
+</head>
+
+<body>
+  <p class="my-name">Pal Zsolt</p>
+  <p class="my-job">Web Developer</p>
+  <p class="my-hometown">Szekelyudvarhely</p>
+  <p class="my-birthday">1999. 09. 19</p>
+</body>
+
+<style>
+  .my-name {
+    text-transform: uppercase;
+  }
+
+  .my-job {
+    font-weight: bold;
+  }
+
+  .my-hometown,
+  .my-birthday {
+    color: red;
+  }
+</style>

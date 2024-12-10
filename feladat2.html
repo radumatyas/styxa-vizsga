@@ -1,0 +1,146 @@
+<!--
+Hozz létre egy  HTML oldalt ami tartalmazza  egy szimpla formot és az pedig a következőket egy autóról:
+Tulajdonosát - text input
+Rendszámát - number input
+Gyártási évét - date input
+Szinét - (piros - fekete - feher- kek) - radio button
+Extrák - checkbox
+Automata - checkbox
+Ülés fűtés - checkbox
+Tolató radar - checkbox
+-->
+
+<!DOCTYPE html>
+
+<head>
+  <meta name="title" content="My car" />
+  <meta name="description" content="This is my car's description" />
+</head>
+
+<body>
+  <input type="text" id="owner" />
+  <input type="number" id="plate" />
+  <input type="date" id="year" />
+
+  <input type="radio" name="color" value="Piros" />
+  <label for="Piros">Piros</label>
+
+  <input type="radio" name="color" value="Fekete" />
+  <label for="Fekete">Fekete</label>
+
+  <input type="radio" name="color" value="Feher" />
+  <label for="Feher">Feher</label>
+
+  <input type="radio" name="color" value="Kek" />
+  <label for="Kek">Kek</label>
+
+  <input type="checkbox" name="extra" value="Automata" />
+  <label for="Automata">Automata</label>
+
+  <input type="checkbox" name="extra" value="Ülés fűtés" />
+  <label for="Ülés fűtés">Ülés fűtés</label>
+
+  <input type="checkbox" name="extra" value="Tolató radar" />
+  <label for="Tolató radar">Tolató radar</label>
+
+  <button onclick="showMyCarDetails()">Show my car details</button>
+
+  <script>
+    function showMyCarDetails() {
+      const ownerValue = document.getElementById("owner");
+      const plateValue = document.getElementById("plate");
+      const yearValue = document.getElementById("year");
+
+      console.log("Tulajdonos:", ownerValue.value);
+      console.log("Rendszam:", plateValue.value);
+      console.log("Gyartasi ev:", yearValue.value);
+
+      const colorValue = document.getElementsByName("color");
+      for (let i = 0; i < colorValue.length; i++) {
+        if (colorValue[i].checked) {
+          console.log("Auto szine:", colorValue[i].value);
+        }
+      }
+
+      const extraValue = document.getElementsByName("extra");
+      for (let i = 0; i < extraValue.length; i++) {
+        if (extraValue[i].checked) {
+          console.log("Extra:", extraValue[i].value);
+        }
+      }
+    }
+  </script>
+</body>
+<!--
+Hozz létre egy  HTML oldalt ami tartalmazza  egy szimpla formot és az pedig a következőket egy autóról:
+Tulajdonosát - text input
+Rendszámát - number input
+Gyártási évét - date input
+Szinét - (piros - fekete - feher- kek) - radio button
+Extrák - checkbox
+Automata - checkbox
+Ülés fűtés - checkbox
+Tolató radar - checkbox
+-->
+
+<!DOCTYPE html>
+
+<head>
+  <meta name="title" content="My car" />
+  <meta name="description" content="This is my car's description" />
+</head>
+
+<body>
+  <input type="text" id="owner" />
+  <input type="number" id="plate" />
+  <input type="date" id="year" />
+
+  <input type="radio" name="color" value="Piros" />
+  <label for="Piros">Piros</label>
+
+  <input type="radio" name="color" value="Fekete" />
+  <label for="Fekete">Fekete</label>
+
+  <input type="radio" name="color" value="Feher" />
+  <label for="Feher">Feher</label>
+
+  <input type="radio" name="color" value="Kek" />
+  <label for="Kek">Kek</label>
+
+  <input type="checkbox" name="extra" value="Automata" />
+  <label for="Automata">Automata</label>
+
+  <input type="checkbox" name="extra" value="Ülés fűtés" />
+  <label for="Ülés fűtés">Ülés fűtés</label>
+
+  <input type="checkbox" name="extra" value="Tolató radar" />
+  <label for="Tolató radar">Tolató radar</label>
+
+  <button onclick="showMyCarDetails()">Show my car details</button>
+
+  <script>
+    function showMyCarDetails() {
+      const ownerValue = document.getElementById("owner");
+      const plateValue = document.getElementById("plate");
+      const yearValue = document.getElementById("year");
+
+      console.log("Tulajdonos:", ownerValue.value);
+      console.log("Rendszam:", plateValue.value);
+      console.log("Gyartasi ev:", yearValue.value);
+
+      const colorValue = document.getElementsByName("color");
+      for (let i = 0; i < colorValue.length; i++) {
+        if (colorValue[i].checked) {
+          console.log("Auto szine:", colorValue[i].value);
+        }
+      }
+
+      const extraValue = document.getElementsByName("extra");
+      for (let i = 0; i < extraValue.length; i++) {
+        if (extraValue[i].checked) {
+          console.log("Extra:", extraValue[i].value);
+        }
+      }
+    }
+  </script>
+</body>

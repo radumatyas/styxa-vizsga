@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<head>
+  <meta name="title" content="Form" />
+  <meta name="description" content="Basic form elements" />
+</head>
+
+<body>
+  <!-- <input type="password" />
+
+  <input type="checkbox" />
+  <input type="radio" />
+
+  <textarea></textarea> -->
+
+  <!-- <select>
+    <option value="1">Egy</option>
+    <option value="2">Ketto</option>
+  </select> -->
+
+  <!-- <input type="date" /> -->
+
+  <input type="text" id="text-input" />
+  <input type="number" id="number-input" />
+  <input type="text" name="text-input-2" />
+
+  <input type="radio" name="szin" value="piros" />
+  <label for="piros">Piros</label>
+
+  <button onclick="showMyName()">Click me</button>
+
+  <script>
+    function showMyName() {
+      const inputValue = document.getElementById("text-input");
+      const numberInputValue = document.getElementById("number-input");
+      const text2InputValue = document.getElementsByName("text-input-2");
+
+      for (let i = 0; i < text2InputValue.length; i++) {
+        if (text2InputValue[i].checked) {
+          console.log(text2InputValue[i].value);
+        }
+      }
+
+      console.log(inputValue.value);
+      console.log("szam:", numberInputValue.value);
+      console.log("masodik szoveg:", text2InputValue.value);
+    }
+  </script>
+</body>
